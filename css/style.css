@@ -70,7 +70,6 @@ footer{
 #logo{
    animation-name: logo_wiggle;
    animation-duration: 15s;
-   
  
 }
 
@@ -82,9 +81,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
 
-  
 }
 
 .card {
@@ -94,8 +93,11 @@ footer{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
+  display: flex;
   flex-basis: 400px;
-  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -142,6 +144,10 @@ footer{
 .gallery{
   min-height: 600px;
   /*Your code here again.*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .gallery > img{
@@ -158,10 +164,12 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .nav_links{
   /*Your code here again.*/
+  display: flex;
   flex-direction: column;
 }
 
@@ -179,9 +187,13 @@ header{
 
 @media screen and (min-width: 850px){
 
+ 
   /* Cards! */
   .card {
     /*Your  code here again.*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .card_big{
@@ -192,10 +204,16 @@ header{
   /* Navbar */
   header{
     /*Your code here again.*/  
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .nav_links{
     /*Your code here again.*/  
+    flex-direction: row;
+    justify-content: space-between;
+    
+
   }
 
   .nav_item a{
