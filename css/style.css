@@ -81,7 +81,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     flex-wrap: wrap;
 
 }
@@ -93,11 +92,8 @@ footer{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
-  display: flex;
   flex-basis: 400px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
 
 }
 
@@ -191,9 +187,7 @@ header{
   /* Cards! */
   .card {
     /*Your  code here again.*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-basis: 225px;
   }
 
   .card_big{
@@ -211,7 +205,6 @@ header{
   .nav_links{
     /*Your code here again.*/  
     flex-direction: row;
-    justify-content: space-between;
     
 
   }
@@ -225,9 +218,22 @@ header{
   .card {
     flex-basis: 200px;
   }
+  .pricing{
+    align-items: flex-start;
+  }
   /*Your code here again.*/
   /*You will want four selectors*/  
+  body{
+    background-image: none;
+  }
+  .gallery{
+    display: none;
+  }
+
 }
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media (prefers-reduced-motion){
+
+}
